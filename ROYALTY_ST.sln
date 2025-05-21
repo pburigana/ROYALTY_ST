@@ -9,11 +9,17 @@ Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "ROYALTY_ST_CUBE", "ROYALTY_
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
 		Development|x86 = Development|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Debug|x86.ActiveCfg = Debug
+		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Debug|x86.Build.0 = Debug
 		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|x86.ActiveCfg = Development
 		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|x86.Build.0 = Development
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.ActiveCfg = Debug|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Build.0 = Debug|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Deploy.0 = Debug|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
 		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
