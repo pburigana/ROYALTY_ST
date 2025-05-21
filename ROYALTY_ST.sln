@@ -5,13 +5,18 @@ VisualStudioVersion = 15.0.28307.2092
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ROYALTY_ST", "ROYALTY_ST\ROYALTY_ST.dtproj", "{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}"
 EndProject
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "ROYALTY_ST_CUBE", "ROYALTY_ST_CUBE\ROYALTY_ST_CUBE.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Development|Default = Development|Default
+		Development|x86 = Development|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|Default.ActiveCfg = Development
-		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|Default.Build.0 = Development
+		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|x86.ActiveCfg = Development
+		{7D8CCC5A-25D3-4BD9-882F-3DF24084EF84}.Development|x86.Build.0 = Development
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
