@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Royalty"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{D01F43F9-8E30-48BF-BC5A-E51DFA2258F5}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{4BFBD1EB-FA41-4979-8DE6-5503B626E885}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1515,6 +1515,7 @@ AAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\Create permanent tables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{E65A0ED7-B32D-4F17-9E23-A2DFD2CE4AE9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -2258,6 +2259,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\Drop temporary tables"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{6a85aa73-7205-43c7-9aa1-9680bc5e84ad}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -2330,155 +2332,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                   Language="CSharp"
                   ReadOnlyVariables="User::Agreement,User::Agreement_Dt,User::Exchange_Dt,User::Init_Dt,User::List_Agreement_Dt,User::List_Plan_Dt,User::List_Quarter_Actual_Dt,User::Plan"
                   ReadWriteVariables="User::Royalty_Cum_Dt,User::Royalty_Dt,User::SapAct_Forecast_Dt">
-                  <ProjectItem
-                    Name="Properties\AssemblyInfo.cs"
-                    Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_a3a8ce533a1f4654a4a4359d9ff77ead")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_a3a8ce533a1f4654a4a4359d9ff77ead")]
-[assembly: AssemblyCopyright("Copyright @  2022")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-                  <ProjectItem
-                    Name="Properties\Resources.resx"
-                    Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>]]></ProjectItem>
                   <ProjectItem
                     Name="ScriptMain.cs"
                     Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -2605,7 +2458,6 @@ namespace ST_bf3b0e5b230d407093a5ac476b140609
             bool fireAgain = false;
             //Dts.Events.FireInformation(0, "********", "Product: " + Product, "", 0, ref fireAgain);
 
-            MessageBox.Show("PAOLO");
 
             // Internal variables
             // -----------------------------------
@@ -2673,15 +2525,8 @@ namespace ST_bf3b0e5b230d407093a5ac476b140609
             //    ref Quarter_Dt);
 
 
-            Cla
-            
-            Class1.Query_Quarters_TEST(
-                    in Plan,
-                    in List_Quarter_Actual_Dt,
-                    ref Quarter_Dt);
 
-
-            //Query_Quarters_TEST(
+            //Query_Quarters(
             //    in Plan,
             //    in List_Quarter_Actual_Dt,
             //    ref Quarter_Dt);
@@ -2885,9 +2730,8 @@ namespace ST_bf3b0e5b230d407093a5ac476b140609
         //    ref DataTable Quarter_Dt)
         //{
 
-        //    MessageBox.Show("PIPPO");
         //    // Variabili interne
-        //    // -----------------------------------
+        //    //-----------------------------------
         //    string SqlString = "";
 
 
@@ -18315,6 +18159,155 @@ namespace ST_bf3b0e5b230d407093a5ac476b140609
     }
 }]]></ProjectItem>
                   <ProjectItem
+                    Name="Properties\Resources.resx"
+                    Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+                  <ProjectItem
+                    Name="Properties\AssemblyInfo.cs"
+                    Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_a3a8ce533a1f4654a4a4359d9ff77ead")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_a3a8ce533a1f4654a4a4359d9ff77ead")]
+[assembly: AssemblyCopyright("Copyright @  2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                  <ProjectItem
                     Name="Class1.cs"
                     Encoding="UTF8"><![CDATA[using System;
 using System.Data;
@@ -18430,8 +18423,7 @@ namespace ST_a3a8ce533a1f4654a4a4359d9ff77ead
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -18511,18 +18503,42 @@ namespace ST_a3a8ce533a1f4654a4a4359d9ff77ead
     <msb:CodeName>ST_1090d63b87754ae2970f162a9a015fde</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_1090d63b87754ae2970f162a9a015fde</msb:DisplayName>
-    <msb:ProjectId>{CEA7DDFE-334B-4D2C-92DD-9967D0B97745}</msb:ProjectId>
+    <msb:ProjectId>{FDED0C4B-7A65-43CD-8ABD-66C905F7E41E}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_1090d63b87754ae2970f162a9a015fde.csproj" />
     <msb:File Include="Properties\Settings.Designer.cs" />
     <msb:File Include="Properties\Resources.Designer.cs" />
     <msb:File Include="Class1.cs" />
+    <msb:File Include="ScriptMain.cs" />
+    <msb:File Include="Class2.cs" />
     <msb:File Include="Properties\Settings.settings" />
     <msb:File Include="Properties\AssemblyInfo.cs" />
     <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Class2.cs" />
-    <msb:File Include="ScriptMain.cs" />
+    <msb:Breakpoint Include="e1826b2563584d0593c8918baaed2a4b">
+      <msb:FileName>ScriptMain.cs</msb:FileName>
+      <msb:ColumnNumber>13</msb:ColumnNumber>
+      <msb:Enabled>True</msb:Enabled>
+      <msb:LineNumber>164</msb:LineNumber>
+      <msb:Condition>
+      </msb:Condition>
+      <msb:ConditionType>1</msb:ConditionType>
+      <msb:Language>C#</msb:Language>
+      <msb:HitCountType>1</msb:HitCountType>
+      <msb:HitCountTarget>1</msb:HitCountTarget>
+    </msb:Breakpoint>
+    <msb:Breakpoint Include="fd065a9fdc3648eb84904b6817773025">
+      <msb:FileName>ScriptMain.cs</msb:FileName>
+      <msb:LineNumber>105</msb:LineNumber>
+      <msb:ColumnNumber>13</msb:ColumnNumber>
+      <msb:Enabled>True</msb:Enabled>
+      <msb:ConditionType>1</msb:ConditionType>
+      <msb:Condition>
+      </msb:Condition>
+      <msb:Language>C#</msb:Language>
+      <msb:HitCountType>1</msb:HitCountType>
+      <msb:HitCountTarget>1</msb:HitCountTarget>
+    </msb:Breakpoint>
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
                   <ProjectItem
@@ -18631,6 +18647,179 @@ namespace ST_a3a8ce533a1f4654a4a4359d9ff77ead.Properties {
         }
     }
 }]]></ProjectItem>
+                  <BinaryItem
+                    Name="ST_1090d63b87754ae2970f162a9a015fde.dll">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
+AQABAAABEABHA14FOQABAAIAAQAQAIYEDwBBAAEAAwAAABAAAQCSAE0AAQAFAAAAEAAIAJIATQAB
+AAcAAAAQAIUF4QVNAAEACQAAARAAHgbhBWkAAwANAAMBAABjBgAASQAEABAAEQB1BKYAEQB0AaoA
+EQC2AK4ABgZ1ALIAVoBTBrUAVoBUAbUAUCAAAAAAhhg+BQYAAQBQIAAAAACGGD4FBgABAFggAAAA
+AIYAjAQGAAEANCIAAAAAhhg+BQYAAQA8IgAAAACWAGEAuQABAOEiAAAAAIYYPgUGAAQA6SIAAAAA
+lgA8AMUABADhIgAAAACGGD4FBgAEAOEiAAAAAIMYPgUGAAQA9iIAAAAAkwgNBckABAAiIwAAAACT
+CFwBzgAEACkjAAAAAJMIaAHTAAQAMSMAAAAAlgihBtkABQA4IwAAAACGGD4FBgAFAEAjAAAAAJEY
+RAXFAAUAAQABAIEEAQACAHEGAAADAIgGAAABAJwDCQA+BQEAEQA+BQYAGQA+BQoAKQA+BRAAMQA+
+BRAAOQA+BRAAQQA+BRAASQA+BRAAUQA+BRAAWQA+BRAAYQA+BRAAaQA+BQYAeQA+BQYAqQA+BQYA
+yQA+BRUAcQA+BQYAgQBbBi4A2QAQBjMA4QBgBDgA6QCSAz4AiQBJAUIAiQAHBQYA2QC6BgEAgQA+
+BQYA+QABB0wA8QAjB1MAiQAeB0IAiQDxBlkACQHfBhAACQH0AEIAoQA+BRAA8QCTBl8AEQE+BWYA
+GQFbBG0AIQG4AQYAmQA+BQYAKQEXAXMAKQERB3wAsQA+BYIA0QA+BQYACAAUAJwACAAYAKEAJAAS
+AKEAKQB7ABUBLgALAO0ALgATAPYALgAbABUBLgAjAB4BLgArAEcBLgAzAEcBLgA7AEcBLgBDAB4B
+LgBLAE0BLgBTAEcBLgBbAGQBQwBjAKEAQwAKAKEARAASAKEASQB7ABUBYQBjAKEAYwBjAKEAYwAK
+AKEAgwBrAKEA4wBzAKEAGwBHAAcAAQAIAAMAAAARBd4AAAB8AeMAAAClBugAAgAKAAMAAgALAAUA
+AQAMAAUAAgANAAcABIAAAAEAAAA4JFlJAAAAAAAAxgAAAAQAAAAAAAAAAAAAAIoAiQAAAAAADgAA
+AAAAAAAAAAAAkwDDAwAAAAAEAAAAAAAAAAAAAACKAH0AAAAAAAQAAAAAAAAAAAAAAIoAaQQAAAAA
+DgAAAAAAAAAAAAAAkwBCAAAAAAAEAAAAAAAAAAAAAACKAD4GAAAAAAAAAAABAAAAjwUAAAkABAAA
+AAAAAENsYXNzMQBDbGFzczIAU1RfYmYzYjBlNWIyMzBkNDA3MDkzYTVhYzQ3NmIxNDA2MDkAPE1v
+ZHVsZT4AUElQUE8ATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2VkRFRTAFF1ZXJ5X1F1YXJ0ZXJz
+X1RFU1QAdmFsdWVfXwBTeXN0ZW0uRGF0YQBtc2NvcmxpYgBTVF9hM2E4Y2U1MzNhMWY0NjU0YTRh
+NDM1OWQ5ZmY3N2VhZABkZWZhdWx0SW5zdGFuY2UAU1RfMTA5MGQ2M2I4Nzc1NGFlMjk3MGYxNjJh
+OWEwMTVmZGUARGF0YVRhYmxlAFRvVGFibGUAVmFyaWFibGUAUnVudGltZVR5cGVIYW5kbGUAR2V0
+VHlwZUZyb21IYW5kbGUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGltZQBDbG9uZQBUeXBl
+AEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAFZTVEFSVFNj
+cmlwdE9iamVjdE1vZGVsQmFzZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBDbG9zZQBFZGl0b3JC
+cm93c2FibGVTdGF0ZQBFbWJlZGRlZEF0dHJpYnV0ZQBDb21waWxlckdlbmVyYXRlZEF0dHJpYnV0
+ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1dGUARWRpdG9y
+QnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1ibHlUcmFkZW1h
+cmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29uZmlndXJhdGlv
+bkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENvbXBpbGF0aW9uUmVsYXhh
+dGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5Q29weXJpZ2h0
+QXR0cmlidXRlAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBJc1JlYWRPbmx5QXR0
+cmlidXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJp
+YnV0ZQBnZXRfVmFsdWUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBTdHJpbmcATWlj
+cm9zb2Z0LlNxbFNlcnZlci5TY3JpcHRUYXNrAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlRhc2tz
+LlNjcmlwdFRhc2sAU2NyaXB0T2JqZWN0TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNUXzEw
+OTBkNjNiODc3NTRhZTI5NzBmMTYyYTlhMDE1ZmRlLmRsbABGaWxsAGdldF9JdGVtAFN5c3RlbQBF
+bnVtAHJlc291cmNlTWFuAFBsYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0
+ZW0uR2xvYmFsaXphdGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBEYkNvbm5lY3Rpb24AU3FsQ29ubmVj
+dGlvbgBTeXN0ZW0uRGF0YS5Db21tb24AQ3VsdHVyZUluZm8AQ2xlYXIAZ2V0X1Jlc291cmNlTWFu
+YWdlcgBEYkRhdGFBZGFwdGVyAFNxbERhdGFBZGFwdGVyAC5jdG9yAC5jY3RvcgBTeXN0ZW0uRGlh
+Z25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2Vz
+AFNUX2EzYThjZTUzM2ExZjQ2NTRhNGE0MzU5ZDlmZjc3ZWFkLlByb3BlcnRpZXMuUmVzb3VyY2Vz
+LnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTVF9hM2E4Y2U1MzNhMWY0NjU0YTRhNDM1OWQ5ZmY3
+N2VhZC5Qcm9wZXJ0aWVzAGdldF9WYXJpYWJsZXMAU2V0dGluZ3MATWljcm9zb2Z0LkNvZGVBbmFs
+eXNpcwBTeXN0ZW0uV2luZG93cy5Gb3JtcwBTdWNjZXNzAGdldF9EdHMAU2NyaXB0UmVzdWx0cwBM
+aXN0X1F1YXJ0ZXJfQWN0dWFsX0R0AFF1YXJ0ZXJfRHQAQ29uY2F0AE9iamVjdABnZXRfRGVmYXVs
+dABEaWFsb2dSZXN1bHQAc2V0X1Rhc2tSZXN1bHQAU3lzdGVtLkRhdGEuU3FsQ2xpZW50AHNldF9T
+b3J0AERhdGFWaWV3AGdldF9EZWZhdWx0VmlldwBTaG93AE1lc3NhZ2VCb3gAZ2V0X0Fzc2VtYmx5
+AENvcHkAb3BfRXF1YWxpdHkAAAAlVQBzAGUAcgA6ADoAQQBnAHIAZQBlAG0AZQBuAHQAXwBEAHQA
+ACNVAHMAZQByADoAOgBFAHgAYwBoAGEAbgBnAGUAXwBEAHQAABtVAHMAZQByADoAOgBJAG4AaQB0
+AF8ARAB0AAAvVQBzAGUAcgA6ADoATABpAHMAdABfAEEAZwByAGUAZQBtAGUAbgB0AF8ARAB0AAAl
+VQBzAGUAcgA6ADoATABpAHMAdABfAFAAbABhAG4AXwBEAHQAADlVAHMAZQByADoAOgBMAGkAcwB0
+AF8AUQB1AGEAcgB0AGUAcgBfAEEAYwB0AHUAYQBsAF8ARAB0AAAfVQBzAGUAcgA6ADoAQQBnAHIA
+ZQBlAG0AZQBuAHQAABVVAHMAZQByADoAOgBQAGwAYQBuAAAhVQBzAGUAcgA6ADoAUgBvAHkAYQBs
+AHQAeQBfAEQAdAAAMVUAcwBlAHIAOgA6AFMAYQBwAEEAYwB0AF8ARgBvAHIAZQBjAGEAcwB0AF8A
+RAB0AAApVQBzAGUAcgA6ADoAUgBvAHkAYQBsAHQAeQBfAEMAdQBtAF8ARAB0AAALUABJAFAAUABP
+AAANQQBDAFQAVQBBAEwAACVbAFEAVQBBAFIAVABFAFIAIAAoAHkAeQB5AHkAUQBxACkAXQAAgQNE
+AGEAdABhACAAUwBvAHUAcgBjAGUAIAA9ACAAQQBHAFIAQwBMAEYAUgBTAFMAUQBMAFAAUgAuAEEA
+RwBSAE0ARgBHAC4AUwBUAE0ATQBGAEcALgBDAE8ATQBcAFMAUgBNAFAAUgBEADsAIABJAG4AdABl
+AGcAcgBhAHQAZQBkACAAUwBlAGMAdQByAGkAdAB5AD0AdAByAHUAZQA7ACAASQBuAGkAdABpAGEA
+bAAgAEMAYQB0AGEAbABvAGcAIAA9ACAAUgBPAFkAQQBMAFQAWQA7ACAAQwBvAG4AbgBlAGMAdABp
+AG8AbgAgAFQAaQBtAGUAbwB1AHQAIAA9ACAAMAAAghUNAAoAIAAgACAAIAAgACAAIAAgACAAIAAg
+ACAAIAAgACAAIAAgACAAIABTAEUATABFAEMAVAAgAEQASQBTAFQASQBOAEMAVAANAAoAIAAgACAA
+IAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFMAVQBCAFMAVABSAEkATgBH
+ACgAWwBEAGEAdABlAFEAdQBhAHIAdABlAHIAXQAsADEALAA0ACkAIAArACAAJwBRACcAIAArACAA
+UwBVAEIAUwBUAFIASQBOAEcAKABbAEQAYQB0AGUAUQB1AGEAcgB0AGUAcgBdACwANQAsADEAKQAg
+AEEAUwAgAFsAUQBVAEEAUgBUAEUAUgAgACgAeQB5AHkAeQBRAHEAKQBdAA0ACgAgACAAIAAgACAA
+IAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAEYAUgBPAE0AIABbAEUAUABNAF0ALgBbAGQAYgBv
+AF0ALgBbAEUAUABNAF8AUwBNAEYAXQANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAA
+IAAgACAAIABXAEgARQBSAEUADQAKACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAg
+ACAAIAAgACAAIABbAFYAZQByAHMAaQBvAG4AVgBlAHIAcwBpAG8AbgBdACAAPQAgACcAAYD1JwAg
+AA0ACgAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAE8AUgBEAEUAUgAgAEIA
+WQANAAoAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgAFMAVQBC
+AFMAVABSAEkATgBHACgAWwBEAGEAdABlAFEAdQBhAHIAdABlAHIAXQAsADEALAA0ACkAIAArACAA
+JwBRACcAIAArACAAUwBVAEIAUwBUAFIASQBOAEcAKABbAEQAYQB0AGUAUQB1AGEAcgB0AGUAcgBd
+ACwANQAsADEAKQAgAAFxUwBUAF8AYQAzAGEAOABjAGUANQAzADMAYQAxAGYANAA2ADUANABhADQA
+YQA0ADMANQA5AGQAOQBmAGYANwA3AGUAYQBkAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBz
+AG8AdQByAGMAZQBzAADcp0oRWWwpRZdiBbOSENvqAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFh
+EgcIEkUSRRJFEkUSRRJFEkUSRQQgABJtBCAAEnEFIAESdRwDIAAcBCAAEkUEBwESUQYAARGAgQ4F
+AAICDg4FIAASgIUGAAMODg4OBiACAQ4SUQUgAQgSRQgAARKAlRGAmQUgABKAnQcgAgEOEoCdCLd6
+XFYZNOCJCImEXc2AgMyRBAAAAAAEAQAAAAMGElkDBhJdAwYSIAIGCAMGESQLAAMBEA4QEkUQEkUD
+AAABBAAAElkEAAASXQUAAQESXQQAABIgBAgAElkECAASXQQIABIgCAEACAAAAAAAHgEAAQBUAhZX
+cmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTVF9hM2E4Y2U1MzNhMWY0NjU0YTRh
+NDM1OWQ5ZmY3N2VhZAAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDIyAABJAQAaLk5FVEZyYW1l
+d29yayxWZXJzaW9uPXY0LjUBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3Jr
+IDQuNQAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBt
+c2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+PWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAA
+AAAAAAAAAABQQURQQURQtAAAACw5AAAAAAAAAAAAAEY5AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAA4OQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAA
+AFhAAAAaBAAAAAAAAAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAA
+vQTv/gAAAQAAAAEAWUk4JAAAAQBZSTgkPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAAB
+AFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAA
+AAAAALAEegMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAwADAAMAAw
+ADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkA
+TgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABT
+AFQAXwBhADMAYQA4AGMAZQA1ADMAMwBhADEAZgA0ADYANQA0AGEANABhADQAMwA1ADkAZAA5AGYA
+ZgA3ADcAZQBhAGQAAAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AOQAy
+ADcAMgAuADEAOAA3ADcANwAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAFQA
+XwAxADAAOQAwAGQANgAzAGIAOAA3ADcANQA0AGEAZQAyADkANwAwAGYAMQA2ADIAYQA5AGEAMAAx
+ADUAZgBkAGUALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMA
+bwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIAMgAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBk
+AGUAbQBhAHIAawBzAAAAAAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0A
+ZQAAAFMAVABfADEAMAA5ADAAZAA2ADMAYgA4ADcANwA1ADQAYQBlADIAOQA3ADAAZgAxADYAMgBh
+ADkAYQAwADEANQBmAGQAZQAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAA
+AABTAFQAXwBhADMAYQA4AGMAZQA1ADMAMwBhADEAZgA0ADYANQA0AGEANABhADQAMwA1ADkAZAA5
+AGYAZgA3ADcAZQBhAGQAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4A
+MAAuADkAMgA3ADIALgAxADgANwA3ADcAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQBy
+AHMAaQBvAG4AAAAxAC4AMAAuADkAMgA3ADIALgAxADgANwA3ADcAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAWDkAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
+                  <Breakpoint
+                    Enabled="True"
+                    File="ScriptMain.cs"
+                    Line="164"
+                    Column="13" />
+                  <Breakpoint
+                    Enabled="True"
+                    File="ScriptMain.cs"
+                    Line="105"
+                    Column="13" />
                 </ScriptProject>
               </DTS:ObjectData>
             </DTS:Executable>
@@ -18675,6 +18864,7 @@ namespace ST_a3a8ce533a1f4654a4a4359d9ff77ead.Properties {
       DTS:refId="Package\Reotg All"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{b80650dc-b321-4355-aed8-dd19941402bb}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
